@@ -7,9 +7,9 @@
               </div>
               <div class="menu">
                   <ul class="d-flex justify-content-between pt-3">
-                      <li><router-link to="" class="links">Home</router-link></li>
+                      <li><router-link to="/" class="links">Home</router-link></li>
                       <li><a href="#about" class="links">About Us</a></li>
-                      <li><router-link to="" class="links">Contact Us</router-link></li>
+                      <li><router-link to="/contact" class="links">Contact Us</router-link></li>
                       <li><a href="#pricing" class="links">Investment Plans</a></li>
                       <li><router-link to="" class="links">Academy</router-link></li>
                       <li><router-link to="" class="links">Sign Up</router-link></li>

@@ -19,7 +19,7 @@
             <p
               class="animated slideInRight animate3d"
             >If you want to be in charge of your money and still trade profitably, we've got you. Subscribe to our reliable trading signals and analysis to hepl you win more and lose less.</p>
-            <router-link to="/contact" class="carousel-btn animated zoomIn animate3d">Get Started Now<i class="fa fa-long-arrow-alt-right"></i></router-link>
+            <router-link to="/contact" class="carousel-btn animated zoomIn animate3d">Get Started<i class="fa fa-long-arrow-alt-right"></i></router-link>
           </div>
         </div>
         <div class="carousel-item">
@@ -32,7 +32,7 @@
             <p
               class="animated slideInDown animate3d"
             >We provide you with quality and focused guide and software to help you get started and become profitable as quickly as possible.</p>
-            <router-link to="/products" class="carousel-btn animated zoomIn animate3d">Join Forex School<i class="fa fa-long-arrow-alt-right"></i></router-link>
+            <router-link to="/products" class="carousel-btn animated zoomIn animate3d">Get Started<i class="fa fa-long-arrow-alt-right"></i></router-link>
           </div>
         </div>
       </div>
@@ -151,9 +151,9 @@ export default {
     .carousel-caption {
       position: absolute;
       top: 25%;
-      width: 80%;
+      width: 70%;
       transform: translateX(-50%, -50%);
-      text-align: left;
+      // text-align: left;
       h2 {
         font-size: 1.5rem;
         padding-bottom: 2rem;

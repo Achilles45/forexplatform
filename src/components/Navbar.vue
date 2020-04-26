@@ -118,7 +118,7 @@ export default {
         height: 100vh;
         bottom: 0;
         left: 0;
-        top: 12%;
+        top: 15%;
         display: none;
         ul{
             flex-direction: column;

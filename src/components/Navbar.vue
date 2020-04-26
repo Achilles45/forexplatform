@@ -85,6 +85,9 @@ export default {
         }
         .navbar__toggler{
             display: none;
+            font-size: 1.5rem;
+            padding-right: 1rem;
+            color: $primary-color;
         }
     }
 }

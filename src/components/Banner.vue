@@ -6,7 +6,7 @@
           <div class="carousel-overlay"></div>
           <img class="carousel-img" src="../assets/images/banner2.jpg" alt="First slide" />
           <div class="carousel-caption">
-            <h2 class="animated bounceIn animate3d">Making forex trade investment profitable to everyone</h2>
+            <h2 class="animated bounceIn">Making forex trade investment profitable to everyone</h2>
             <p>Our team of proficient and experienced traders crowdfund resources from investors to trade the forex market and pay our investors 15% weekly. No hidden charges, no story.</p>
             <router-link to="/products" class="carousel-btn animated zoomIn animate3d">Get Started<i class="fa fa-long-arrow-alt-right"></i></router-link>
           </div>
@@ -15,7 +15,7 @@
           <div class="carousel-overlay"></div>
           <img class="carousel-img" src="../assets/images/banner1.jpg" alt="Second slide" />
           <div class="carousel-caption">
-            <h2 class="animated slideInLeft animate2d">Want to trade alone? Get access to reliable trading signals</h2>
+            <h2 class="animated slideInDown animate3d">Want to trade alone? Get access to reliable trading signals</h2>
             <p
               class="animated slideInRight animate3d"
             >If you want to be in charge of your money and still trade profitably, we've got you. Subscribe to our reliable trading signals and analysis to hepl you win more and lose less.</p>
@@ -139,6 +139,9 @@ export default {
 
 @media only screen and (max-width: 960px) {
   .carousel__wrapper {
+    .carousel-overlay{
+      background: rgba(4, 9, 30, 0.7) !important;
+    }
     .carousel-img {
       width: auto;
       height: 100vh;
@@ -158,6 +161,7 @@ export default {
       p {
         font-size: 0.8rem;
         padding-bottom: 2rem;
+        opacity: .8 !important;
       }
     }
   }

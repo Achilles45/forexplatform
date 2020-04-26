@@ -100,8 +100,12 @@ export default {
 
 //MEDIA QUERIES
 @media only screen and (max-width: 600px){
+    .signin__wrapper{
+        // height: 100% !important;
+        padding: 4rem 0;
+    }
      .form__wrapper{
-         margin-top: 4rem !important;
+         margin-top: 3rem !important;
          form{
              .form__buttom{
                  flex-direction: column;

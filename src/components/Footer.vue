@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-6 text-center">
-                  <h4>We'd Love to hear from You!</h4>
+                  <h4>Subscribe to our newsletter to always be in the loop!</h4>
                   <form action="">
                          <input type="email" class="form-control" placeholder="typeyouremail@gmail.com">
                          <button type="submit" class="form__btn">Subscibe</button>
@@ -37,7 +37,7 @@
           </div>
           <hr>
           <div class="footer__bottom text-center">
-              <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat perspiciatis error architecto voluptatem vitae. Accusamus, facere cum. Cum aut ut nulla necessitatibus accusamus qui sapiente voluptate illo libero, quod impedit maiores eligendi at expedita assumenda eaque delectus nostrum cupiditate consequuntur. Blanditiis libero similique commodi tempora animi! Sint dolore nulla ipsa?.</small>
+              <small>We are a small group of profitable trders that crowdfund resources from our invetors to trade the financial markets and provide returns on a weekly basis. Please take time to read our terms and condition page before you invest your money so you have a working idea of how it works. For any questions or enquiry, kindly use the livechat widget below as a customer care agent is always handy to repond to you. Also, no payment should be made outside of the accounts provided as you would be doing so at your own risk. Happy investing.</small>
           </div>
       </div>
   </footer>
@@ -50,6 +50,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/styles/_colors';
 .footer{
     background: linear-gradient(rgba(4,9,30,.9), rgba(4,9,30,.9)), url('../assets/images/banner1.jpg');
     background-position: center;
@@ -73,7 +74,7 @@ export default {
         }
         .form__btn{
             flex: 2;
-            background: red;
+            background: $primary-color;
             margin-left: 2rem;
             border-radius: 3px;
             border: none;
@@ -92,6 +93,7 @@ export default {
             padding-bottom: 2rem;
         }
         p{
+            opacity: .6;
             a{
                 color: #fff;
                 text-decoration: none;
@@ -101,6 +103,12 @@ export default {
     hr{
         background: #fff;
         opacity: .8;
+    }
+    .footer__bottom{
+        small{
+            color: #fff;
+            opacity: .6;
+        }
     }
 }
 </style>

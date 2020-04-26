@@ -32,7 +32,7 @@
                   <!-- <p><router-link to="/about">ABOUT</router-link></p> -->
               </div>
               <div class="content__card">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quos corrupti rem magni esse dicta voluptate dolor et necessitatibus quibusdam.</p>
+                  <p>Trans Woji, Porth Harcourt, River State, Nigeria</p>
               </div>
           </div>
           <hr>
@@ -109,6 +109,29 @@ export default {
             color: #fff;
             opacity: .6;
         }
+    }
+}
+
+//MEDIA QUERIES
+@media only screen and (max-width: 600px){
+    form{
+        flex-direction: column;
+        input{
+            flex: 1;
+            padding: 1rem 1rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        .form__btn{
+            margin-left: 0 !important;
+            padding: 1rem !important;
+        }
+    }
+    .footer__bottom{
+          text-align: justify !important;
+        small{
+        font-size: .9rem;
+    }
     }
 }
 </style>

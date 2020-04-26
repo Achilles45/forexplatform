@@ -150,7 +150,7 @@ export default {
     }
     .carousel-caption {
       position: absolute;
-      top: 25%;
+      top: 20% !important;
       width: 70%;
       transform: translateX(-50%, -50%);
       // text-align: left;

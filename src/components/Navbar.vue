@@ -13,7 +13,7 @@
                       <li><a href="#pricing" class="links">Investment Plans</a></li>
                       <li><router-link to="" class="links">Academy</router-link></li>
                       <li><router-link to="" class="links">Sign Up</router-link></li>
-                      <li><router-link to="" class="login links">Sing In</router-link></li>
+                      <li><router-link to="/signin" class="login links">Sing In</router-link></li>
                   </ul>
               </div>
               <div @click="showNav()" class="navbar__toggler">

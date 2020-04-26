@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from '../views/Index.vue'
 import Contact from '../views/Contact.vue'
+import Signin from '../views/Signin.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ Vue.use(VueRouter)
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/signin',
+    name: 'Signin',
+    component: Signin
   },
 ]
 

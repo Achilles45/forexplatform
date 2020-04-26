@@ -1,9 +1,9 @@
 <template>
   <div class="signin__wrapper">
       <div class="container">
-          <div class="row pt-5">
+          <div class="row">
               <div class="col-md-6">
-                  <h4><router-link to="/" class="logo">Home page</router-link></h4>
+                  <h4 class="pt-5"><router-link to="/" class="logo">Home page</router-link></h4>
                   <div class="text">
                       <h1>Welcome Back!</h1>
                       <h5>Signin to your account continue</h5>
@@ -100,12 +100,12 @@ export default {
 
 //MEDIA QUERIES
 @media only screen and (max-width: 600px){
-    .signin__wrapper{
-        // height: 100% !important;
-        padding: 4rem 0;
-    }
+    // .signin__wrapper{
+    //     // height: 100% !important;
+    //     // padding: 4rem 0;
+    // }
      .form__wrapper{
-         margin-top: 3rem !important;
+         margin-top: 2rem !important;
          form{
              .form__buttom{
                  flex-direction: column;

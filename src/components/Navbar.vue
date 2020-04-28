@@ -8,11 +8,11 @@
               <div class="menu">
                   <ul class="d-flex justify-content-between pt-3">
                       <li><router-link to="/" class="links">Home</router-link></li>
-                      <li><a href="#about" class="links">About Us</a></li>
+                      <li><router-link to="/about">About Us</router-link></li>
                       <li><router-link to="/contact" class="links">Contact Us</router-link></li>
                       <li><a href="#pricing" class="links">Investment Plans</a></li>
-                      <li><router-link to="" class="links">Academy</router-link></li>
-                      <li><router-link to="" class="links">Sign Up</router-link></li>
+                      <li><router-link to="/academy" class="links">Academy</router-link></li>
+                      <li><router-link to="/signup" class="links">Sign Up</router-link></li>
                       <li><router-link to="/signin" class="login links">Sing In</router-link></li>
                   </ul>
               </div>
@@ -112,7 +112,7 @@ export default {
 @media only screen and (max-width: 600px){
     .menu{
         background-color: #000;
-        width: 70%;
+        width: 100%;
         position: absolute;
         z-index: 100;
         height: 100vh;

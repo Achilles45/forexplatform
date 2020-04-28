@@ -32,9 +32,9 @@
                    <div class="col-md-4">
                       <div class="info__wrapper d-flex align-items-center">
                      <div class="icon__wrapper">
-                            <p><i class="fa fa-home"></i></p>
+                            <p><i class="fa fa-cubes"></i></p>
                      </div>
-                        <p class="pl-3">1 Villa Road, Abuja, Nigeria.</p>
+                        <p class="pl-2">1 Villa Road, Abuja, Nigeria.</p>
                     </div>
                   </div>
               </div>
@@ -96,7 +96,7 @@ components:{
 <style lang="scss" scoped>
 @import '../assets/styles/_colors';
 .contact__wrapper{
-    background: linear-gradient(rgba(4,9,30,.9), rgba(4,9,30,.9)), url('../assets/images/banner4.jpg');
+    background: linear-gradient(rgba(4,9,30,.8), rgba(4,9,30,.8)), url('../assets/images/banner4.jpg');
     background-position: center;
     background-size: cover;
     color: #fff;

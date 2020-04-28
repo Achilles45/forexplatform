@@ -81,7 +81,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/_colors';
 .about__wrapper{
-  background: linear-gradient(rgba(4,9,30,.9), rgba(4,9,30,.9)), url('../assets/images/banner4.jpg');
+  background: linear-gradient(rgba(4,9,30,.8), rgba(4,9,30,.8)), url('../assets/images/banner4.jpg');
   background-position: center;
   background-size: cover;
   color: #fff;

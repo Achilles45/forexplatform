@@ -5,6 +5,7 @@
     <Banner />
     <About />
     <Pricing />
+    <Education />
     <Footer />
   </div>
 </template>
@@ -16,6 +17,7 @@ import Navbar from '@/components/Navbar.vue'
 import Banner from '@/components/Banner.vue'
 import About from '@/components/About.vue'
 import Pricing from '@/components/Pricing.vue'
+import Education from '@/components/Education.vue'
 import Footer from '@/components/Footer.vue'
 export default {
   name: 'Index',
@@ -25,6 +27,7 @@ export default {
     Banner,
     About,
     Pricing,
+    Education,
     Footer
   }
 }

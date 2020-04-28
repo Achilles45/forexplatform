@@ -16,12 +16,12 @@
               <div class="content__card">
                   <h6>Company</h6>
                   <p><router-link to="/about">About</router-link></p>
-                  <p><router-link to="/about">Terms & Conditions</router-link></p>
+                  <p><router-link to="/terms">Terms & Conditions</router-link></p>
                   <!-- <p><router-link to="/about">ABOUT</router-link></p> -->
               </div>
              <div class="content__card">
                   <h6>Discover</h6>
-                  <p><router-link to="/about">Contact Us</router-link></p>
+                  <p><router-link to="/contact">Contact Us</router-link></p>
                   <p><router-link to="/about">Our Blog</router-link></p>
                   <!-- <p><router-link to="/about">ABOUT</router-link></p> -->
               </div>

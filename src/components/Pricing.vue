@@ -15,7 +15,7 @@
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
-                 <router-link to="" class="card__btn">Select Plan</router-link>
+                 <router-link to="/signup" class="card__btn">Select Plan</router-link>
              </div>
               <div class="plans__card card text-center">
                  <h4>$200.00 Plan</h4>
@@ -24,7 +24,7 @@
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
-                 <router-link to="" class="card__btn">Select Plan</router-link>
+                 <router-link to="/signup" class="card__btn">Select Plan</router-link>
              </div>
               <div class="plans__card card text-center">
                  <h4>$500.00 Plan</h4>
@@ -33,7 +33,7 @@
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
-                 <router-link to="" class="card__btn">Select Plan</router-link>
+                 <router-link to="/signup" class="card__btn">Select Plan</router-link>
              </div>
               <div class="plans__card card text-center">
                  <h4>$1,000.00 Plan</h4>
@@ -42,7 +42,7 @@
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
-                 <router-link to="" class="card__btn">Select Plan</router-link>
+                 <router-link to="/signup" class="card__btn">Select Plan</router-link>
              </div>
               <div class="plans__card card text-center">
                  <h4>$5,000.00 Plan</h4>
@@ -51,7 +51,7 @@
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
-                 <router-link to="" class="card__btn">Select Plan</router-link>
+                 <router-link to="/signup" class="card__btn">Select Plan</router-link>
              </div>
               <div class="plans__card card text-center">
                  <h4>$10,000.00 Plan</h4>
@@ -60,7 +60,7 @@
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
-                 <router-link to="" class="card__btn">Select Plan</router-link>
+                 <router-link to="/signup" class="card__btn">Select Plan</router-link>
              </div>
          </div>
       </div>

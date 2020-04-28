@@ -5,32 +5,18 @@
               <div class="col-md-6">
                   <h4 class="pt-5"><router-link to="/" class="logo">Home page</router-link></h4>
                   <div class="text">
-                      <h1>Welcome Back!</h1>
-                      <h5>Signin to your account continue</h5>
+                      <h1>Recover Password</h1>
+                      <h5>Recover your password in seconds</h5>
                   </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 pt-5">
                   <div class="form__wrapper">
-                      <form @submit.prevent="signin()">
+                      <form action="">
                           <div class="form-group">
                               <!-- <label for="">Email Address</label> -->
-                              <input type="text" id="input" class="form-control" placeholder="Email Address">
+                              <input type="text" class="form-control" placeholder="Email Address">
                           </div>
-                           <div class="form-group">
-                              <!-- <label for="">Password</label> -->
-                              <input type="password" id="input" class="form-control" placeholder="Password">
-                          </div>
-                          <div class="form__buttom pt-2 pb-3">
-                              <p>Yet to have an account? <router-link to="/signup">Create a free account</router-link></p>
-                                     <p><router-link to="/reset-password">Reset password</router-link></p>
-                          </div>
-                          <div v-if="err" class="alert alert-danger animated slideInRight">
-                              {{ err }}
-                          </div>
-                          <div v-if="loading" class="loading text-center">
-                              <img src="../assets/images/loader.gif" class="loader" alt="">
-                          </div>
-                          <button type="submit" class="signin__btn">Sign In</button>
+                          <button type="submit" class="signin__btn">Reset Password</button>
                           
                       </form>
                   </div>
@@ -42,29 +28,7 @@
 
 <script>
 export default {
-    data(){
-        return{
-            email:null,
-            password:null,
-            err:null,
-            loading: false
-        }
-    },
-    methods:{
-        signin(){
-            this.loading = true
-            //Check first if all fields has been filled out
-            if(!this.email || !this.password){
-                this.loading = false
-                this.err = 'Please provide your credentials. Refresh and try again!'
-                const inputBorder = document.querySelectorAll('#input');
-                inputBorder[0].style.borderColor = 'red';
-                inputBorder[1].style.borderColor = 'red';
-           }else{
-                this.loading = true
-            }
-        }
-    }
+
 }
 </script>
 
@@ -131,7 +95,7 @@ export default {
                 color:#fff;
                 border: none;
                 padding: .8rem 2rem;
-                width: 30%;
+                width: 50%;
                 border-radius: 4px;
             }
             .form__buttom{
@@ -147,19 +111,31 @@ export default {
 
 //MEDIA QUERIES
 @media only screen and (max-width: 600px){
-    .signin__wrapper{
-        height: 100% !important;
-        padding: 4rem 0;
-        h1{
-             font-size: 2rem !important;
-         }
-    }
+    // .signin__wrapper{
+    //     // height: 100% !important;
+    //     // padding: 4rem 0;
+    // }
      .form__wrapper{
          margin-top: 2rem !important;
-         margin-bottom: 1rem;
+         form{
+             .form__buttom{
+                 flex-direction: column;
+             }
+         }
+     }
+}
+//MEDIA QUERIES
+@media only screen and (max-width: 600px){
+    // .signin__wrapper{
+    //     // height: 100% !important;
+    //     // padding: 4rem 0;
+    // }
+     .form__wrapper{
+         margin-top: 2rem !important;
          form{
              .signin__btn{
                  width: 100% !important;
+                 height: 3.8rem;
              }
          }
      }

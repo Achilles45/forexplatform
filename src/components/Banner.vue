@@ -140,7 +140,7 @@ export default {
 @media only screen and (max-width: 960px) {
   .carousel__wrapper {
     .carousel-overlay{
-      background: rgba(4, 9, 30, 0.7) !important;
+      background: rgba(4, 9, 30, 0.6) !important;
     }
     .carousel-img {
       width: auto;
@@ -150,13 +150,14 @@ export default {
     }
     .carousel-caption {
       position: absolute;
-      top: 20% !important;
+      top: 17% !important;
       width: 70%;
       transform: translateX(-50%, -50%);
       // text-align: left;
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem !important;
         padding-bottom: 2rem;
+        line-height: 1.5 !important;
       }
       p {
         font-size: 0.8rem;

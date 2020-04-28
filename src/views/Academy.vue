@@ -142,4 +142,24 @@ export default {
         opacity: .8;
     }
 }
+//MEDIA QUERIES
+  @media only screen and (max-width: 600px){
+    .about__wrapper{
+      padding: 4rem 0;
+      p{
+        font-size: .9rem;
+      }
+    }
+    .about__content{
+      .heading {
+        h1{
+          font-size: 1.8rem;
+        }
+        p{
+          font-size: 1rem;
+          color: #627081;
+        }
+      }
+    }
+  }
 </style>

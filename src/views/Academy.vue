@@ -144,13 +144,13 @@ export default {
 }
 //MEDIA QUERIES
   @media only screen and (max-width: 600px){
-    .about__wrapper{
+    .contact__wrapper{
       padding: 4rem 0;
       p{
         font-size: .9rem;
       }
     }
-    .about__content{
+    .academy__content{
       .heading {
         h1{
           font-size: 1.8rem;

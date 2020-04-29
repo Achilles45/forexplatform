@@ -6,7 +6,7 @@
                   <h4 class="pt-5"><router-link to="/" class="logo">Home page</router-link></h4>
                   <div class="text">
                       <h1>Welcome Back!</h1>
-                      <h5>Signin to your account continue</h5>
+                      <h5>Signin to continue to your account</h5>
                   </div>
               </div>
               <div class="col-md-6">
@@ -68,8 +68,7 @@ export default {
                         this.err = 'Please kindly verify your email first to continue'
                     }else{
                         this.loading = false
-                        // this.$router.push({name: 'dashboard'})
-                        alert('You have successfully loged in')
+                        this.$router.push({name: 'dashboard'})
                     }
                 }).catch(err =>{
                     this.loading = false;

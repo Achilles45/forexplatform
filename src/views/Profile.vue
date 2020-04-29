@@ -5,7 +5,7 @@
             <div class="heading text-center pt-3">
                        <h4>Welcome Back</h4><br>
                         <small>{{ email}}</small><br><br>
-                         <small>If you ever need help, reach out to the customer care team now</small>
+                            <small>Please refresh the page if no data was loaded as we depend on strong internet connection. Or contact support if you have any issue</small>
             </div>
             <br /><br /><br>
             <ul>
@@ -142,8 +142,8 @@ export default {
         color:#fff;
         height: 100% !important;
         small{
-            opacity: .7;
-            font-size: .8rem;
+            opacity: .6;
+            font-size: .75rem;
         }
         ul{
             li a, .logout{

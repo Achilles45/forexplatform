@@ -6,6 +6,7 @@ import Signin from '../views/Signin.vue'
 import Signup from '../views/Signup.vue'
 import ResetPassword from '../views/ResetPassword.vue'
 import Academy from '../views/Academy.vue'
+import VerifyEmail from '../views/VerifyEmail.vue'
 Vue.use(VueRouter)
 
   const routes = [
@@ -46,6 +47,11 @@ Vue.use(VueRouter)
     path: '/reset-password',
     name: 'ResetPassword',
     component: ResetPassword
+  },
+  {
+    path: '/verify-email',
+    name: 'VerifyEmail',
+    component: VerifyEmail
   },
 ]
 

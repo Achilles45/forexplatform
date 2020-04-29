@@ -349,6 +349,7 @@ export default {
 }
 .summary__wrapper{
     grid-gap: 5px !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
 }
 .navbar__toggler{
     display: block !important;

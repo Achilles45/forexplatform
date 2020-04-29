@@ -32,7 +32,7 @@
                   <!-- <p><router-link to="/about">ABOUT</router-link></p> -->
               </div>
               <div class="content__card">
-                  <p>Trans Woji, Porth Harcourt, River State, Nigeria</p>
+                  <p>21 KUBWA DISTRICT ABUJA-NIGERIA</p>
               </div>
           </div>
           <hr>
@@ -94,6 +94,7 @@ export default {
         }
         p{
             opacity: .6;
+            font-size: 1rem;
             a{
                 color: #fff;
                 text-decoration: none;

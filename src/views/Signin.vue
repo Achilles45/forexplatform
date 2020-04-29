@@ -41,6 +41,7 @@
 </template>
 
 <script>
+import db from '@/firebase/init'
 import firebase from 'firebase';
 export default {
     data(){
@@ -68,7 +69,20 @@ export default {
                         this.err = 'Please kindly verify your email first to continue'
                     }else{
                         this.loading = false
-                        this.$router.push({name: 'dashboard'})
+                        //Check account type
+                        let user = firebase.auth().currentUser
+                        db.collection('users').where("user_id", "==", user.uid).get().then(snapshot =>{
+                        snapshot.forEach((doc) =>{
+                            this.user = doc.data().user
+                            console.log(this.user)
+                        })
+                        if(this.user == 'Student'){
+                             this.$router.push({name: 'student'})
+                        }else{
+                            this.$router.push({name: 'dashboard'})
+                        }
+                    })
+                        // this.$router.push({name: 'dashboard'})
                     }
                 }).catch(err =>{
                     this.loading = false;

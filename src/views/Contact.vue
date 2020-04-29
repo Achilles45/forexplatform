@@ -26,7 +26,7 @@
                         <div class="icon__wrapper">
                             <p><i class="fa fa-phone"></i></p>
                         </div>
-                        <p class="pl-3">+2348103515205, +2348103515205</p>
+                        <p class="pl-3">+2348103515205, +2349060245065</p>
                     </div>
                   </div>
                    <div class="col-md-4">
@@ -34,7 +34,7 @@
                      <div class="icon__wrapper">
                             <p><i class="fa fa-cubes"></i></p>
                      </div>
-                        <p class="pl-2">1 Villa Road, Abuja, Nigeria.</p>
+                        <p class="pl-2">21 KUBWA DISTRICT ABUJA-NIGERIA</p>
                     </div>
                   </div>
               </div>

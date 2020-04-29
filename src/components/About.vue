@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col-md-4 heading">
                   <h2>Why<br />Uratraining</h2>
-                  <p>Uratraining is your forex management company of choice that helps you make more money trading the bigget financial market in the world which is the forex market. It is managed by a seasoned group of traders that takes well managed risk, thus producing good value.</p>
+                  <p>Uratraining is your forex management company of choice that helps you make more money trading the biggest financial market in the world which is the forex market. It is managed by a seasoned group of traders that takes well managed risk, thus producing good value.</p>
                   <router-link to="/about" class="about__link">Read more here <i class="fa fa-long-arrow-alt-right"></i></router-link>
               </div>
               <div class="col-md-1"></div>

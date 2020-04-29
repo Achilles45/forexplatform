@@ -3,13 +3,13 @@
       <div class="container">
         <div class="row">
             <div class="col-md-5">
-                 <i class="fa fa-phone"></i>&nbsp;&nbsp; +2348103515205, &nbsp; +2348103515205 &nbsp;  (Mon - Fri, 9am to 4pm)
+                 <i class="fa fa-phone"></i>&nbsp;&nbsp; +2348103515205, &nbsp; +2349060245065 &nbsp;  (Mon - Fri, 9am to 4pm)
             </div>
-            <div class="col-md-2">
-                 <i class="fa fa-envelope"></i>&nbsp;&nbsp; hello@uratraining.com
+            <div class="col-md-3">
+                 <i class="fa fa-envelope"></i>&nbsp;&nbsp; uratrainingfx@gmail.com
             </div>
-            <div class="col-md-5">
-                <i class="fa fa-cubes"></i>&nbsp;&nbsp; Please note that terms and conditions applies to all plans
+            <div class="col-md-4">
+                <i class="fa fa-cubes"></i>&nbsp;&nbsp; Terms and conditions applies to all plans
             </div>
         </div>
       </div>

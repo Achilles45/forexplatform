@@ -49,12 +49,19 @@
                                <div class="form-group">
                                     <small id="passwordHelpBlock" class="form-text text-muted">Select an investment plan that is suitable for you. You can always upgrade it!</small>
                                   <select v-model="plan" class="form-control" id="input">
-                                      <option value="100" selected>100 USD</option>
-                                      <option value="200" selected>200 USD</option>
-                                      <option value="500" selected>500 USD</option>
-                                      <option value="1000" selected>1,000 USD</option>
-                                      <option value="5000" selected>5,000 USD</option>
-                                      <option value="10,000" selected>10,000 USD</option>
+                                      <option value="100">100 USD</option>
+                                      <option value="200">200 USD</option>
+                                      <option value="500">500 USD</option>
+                                      <option value="1000">1,000 USD</option>
+                                      <option value="5000">5,000 USD</option>
+                                      <option value="10,000">10,000 USD</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                    <small id="passwordHelpBlock" class="form-text text-muted">Select student if you are registering as a student. Note that the plans above only applies to investors</small>
+                                  <select v-model="user" class="form-control" id="input">
+                                      <option value="Investor">Investor</option>
+                                      <option value="Student">Student</option>
                                   </select>
                               </div>
                                <div class="row">
@@ -102,6 +109,7 @@ export default {
             phone:null,
             address:null,
             plan:null,
+            user:null,
             password:null,
             repeat_password:null,
             err:null,
@@ -114,7 +122,7 @@ export default {
         signup(){
             this.loading = true
             //Check first if all fields has been filled out
-            if(!this.first_name || !this.last_name || !this.email || !this.phone || !this.address || !this.plan || !this.password || !this.repeat_password){
+            if(!this.first_name || !this.last_name || !this.email || !this.phone || !this.user || !this.address || !this.password || !this.repeat_password){
                 this.loading = false
                 this.err = 'All fields are important. Please refresh and try again!'
                 const inputBorder = document.querySelectorAll('#input');
@@ -143,6 +151,7 @@ export default {
                         phone:this.phone,
                         email:this.email,
                         plan:this.plan,
+                        user:this.user,
                         address:this.address,
                         user_id:cred.user.uid
                 })

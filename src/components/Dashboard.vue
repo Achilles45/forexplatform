@@ -3,23 +3,37 @@
         <div class="dashboard__wrapper">
            <div class="dashboard__left" id="dashboard__left">
             <div class="heading text-center pt-3">
-                       <h4>Welcome Back</h4><br>
-                        <small>{{ email}}</small><br><br>
+                    <img src="../assets/images/user.png" class="user__img" alt=""><br>
+                       <small>{{id}}</small><br><br>
+                       <!-- <h4>{{ first_name }} {{ last_name }}</h4> -->
                          <small>Please refresh the page if no data was loaded as we depend on strong internet connection. Or contact support if you have any issue</small>
             </div>
-            <br /><br /><br>
+            <br /><br />
             <ul>
                <li><router-link to="/dashboard/overview"><i class="fa fa-cubes icons"></i>&nbsp;&nbsp; Overview</router-link></li><hr> 
-                <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr> <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
+                <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr>
+                 <li><router-link to="/dashboard/payment"><i class="fa fa-credit-card icons"></i>&nbsp;&nbsp; Deposit</router-link></li><hr> 
+                 <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
                <li @click="logOut()" class="logout"><i class="fa fa-database icons"></i>&nbsp;&nbsp; Logout</li><hr>
             </ul>
             <br><br><br><br>
            </div>
-           <div class="dashboard__right ">
-              <div class="heading d-flex justify-content-between">
+           <div class="dashboard__right">
+               <div class="dashoard__heading d-none d-md-block">
+                 <div class="heading__content d-flex justify-content-between">
+                      <div class="toggler">
+                      <i class="fa fa-bars"></i>
+                  </div>
+                  <div class="email__holder">
+                      <h6>{{email}}</h6>
+                  </div>
+                 </div>
+               </div>
+              <div class="right__wrapper">
+                  <div class="heading d-flex justify-content-between">
                   <div class="content">
-                      <h4>You are logged as </h4>
-                      <h2>{{ first_name }} {{ last_name }}</h2>
+                   <!-- <h5>Welcome Back!</h5> -->
+                      <h4>{{ first_name }} {{ last_name }}</h4>
                       <!-- <small>{{ firstCode }}</small> -->
                   <!-- <small>{{ accountNumber }}</small> -->
                   </div>
@@ -32,28 +46,28 @@
              <small>This is a summary of your activities on this platform</small>
              <hr>
                   <div class="summary__wrapper">
-                  <div class="summary__card one">
+                  <div class="summary__card one pt-4">
                      <i class="fa fa-home"></i>
                      <div class="content pl-4">
                          <h6>Ammount Invested</h6>
-                         <h5>USD {{plan}}</h5>
+                         <h5>$ {{plan}}</h5>
                      </div>
                   </div>
-                    <!-- <div class="summary__card two">
+                    <div class="summary__card two pt-4">
                      <i class="fa fa-credit-card"></i>
                      <div class="content pl-4">
-                         <h6>Expected Returns</h6>
-                         <h5>${{ unpaid }}</h5>
+                         <h6>Expected Weekly Returns</h6>
+                         <h5>$ {{ investmentReturns }}</h5>
                      </div>
-                  </div> -->
-                    <div class="summary__card three">
+                  </div>
+                    <!-- <div class="summary__card three pt-4">
                      <i class="fa fa-cubes"></i>
                      <div class="content pl-4">
                          <h6>Invetment Lifecycle</h6>
                          <p>Your capital and returns would be paid back after a minimum of 4 days after your payment has been confirmed.</p>
                      </div>
-                  </div>
-                   <div class="summary__card four">
+                  </div> -->
+                   <div class="summary__card four pt-4">
                      <i class="fa fa-comments"></i>
                      <div class="content pl-4">
                          <h6>Need any support?</h6>
@@ -61,8 +75,13 @@
                      </div>
                   </div>
               </div>
+              </div>
               <hr>
-              <p>Your investment lifecycle will only begin to count when you have been verified to have made payment. Please use the chat widget to contact customer support for the account details and after payment, you also send evidence of payment to the customer care manager so your account can be activated and your Invetment cycle begins to count.</p>
+              <div>
+                  <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/tickers/?locale=en#%7B%22symbols%22%3A%5B%7B%22title%22%3A%22EUR%2FUSD%22%2C%22proName%22%3A%22FX_IDC%3AEURUSD%22%7D%2C%7B%22description%22%3A%22GBP%2FUSD%22%2C%22proName%22%3A%22FX%3AGBPUSD%22%7D%2C%7B%22description%22%3A%22USD%2FJPY%22%2C%22proName%22%3A%22FX%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22NZD%2FUSD%22%2C%22proName%22%3A%22FX%3ANZDUSD%22%7D%2C%7B%22description%22%3A%22AUD%2FUSD%22%2C%22proName%22%3A%22FX%3AAUDUSD%22%7D%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A72%2C%22utm_source%22%3A%22cryptomorefx.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22tickers%22%7D" style="box-sizing: border-box; height: 72px; width: 100%;"></iframe>
+              </div>
+              <div></div>
+              <p>Your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of 15% of your principal investment would be paid to you on a weekly basis plus 7 working days at most and your capital at the end of the month. Terms and conditions applies. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
               </div>
             <!--End of Dashboard
             =========================-->
@@ -80,13 +99,28 @@ export default {
             email:null,
             first_name:null,
             last_name:null,
-            plan:null
+            plan:null,
+            id:null
+        }
+    },
+    computed:{
+        investmentReturns(){
+            return this.plan * 0.15
         }
     },
      methods:{
           show:function(){
             const navLeft = document.querySelector('#dashboard__left')
             navLeft.classList.toggle('navLeft')
+        },
+        //Remove the left section of the dashbord
+        shiftLeft(){
+            const navLeft = document.querySelector('#dashboard__left')
+            const toggler = document.querySelector('.toggler');
+            toggler.addEventListener('click', ()=>{
+                navLeft.classList.remove()
+            })
+
         },
          //Function for the user to logout
         logOut:function(){
@@ -106,7 +140,8 @@ export default {
                 this.first_name = doc.data().first_name,
                 this.last_name = doc.data().last_name,
                 this.email = doc.data().email,
-                this.plan = doc.data().plan
+                this.plan = doc.data().plan,
+                this.id = doc.data().user_id
             })
         })
     }
@@ -118,16 +153,26 @@ export default {
     width: 100vw;
     .dashboard__wrapper{
     display: grid;
-    grid-template-columns:  300px 1fr;
+    grid-template-columns:  260px 1fr;
     // grid-gap: 30px;
     .dashboard__left{
-        background: #251F68;
-        padding: 3rem 2rem;
+        background: #252525;
+        padding: 1rem 2rem;
         color:#fff;
         height: 100% !important;
         small{
             opacity: .6;
             font-size: .75rem;
+        }
+        .user__img{
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        h5{
+            opacity: .8;
+            font-size: 1.1rem;
+            padding-bottom: .5rem;
         }
         ul{
             li a, .logout{
@@ -145,29 +190,38 @@ export default {
         }
     }
     .dashboard__right{
-        background: #fafafa;
-        padding: 3rem 2.5rem;
+        background: #F4F6F9;
+        // padding: 3rem 2.5rem;
+        .right__wrapper{
+              padding: 2rem 2rem;
+        }
        small{
             color:#627081;
            font-size: .8rem;
            font-weight: bold;
            opacity: .8;
        }
+       .dashoard__heading{
+           background-color: #FBAE1C;
+           padding: 1.2rem 2rem;
+           display: flex;
+           justify-content: space-between;
+       }
         .summary__wrapper{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             grid-gap: 30px;
-            margin-top: 2rem;
+            margin-top: 1rem;
             .summary__card{
                 display: flex;
-                padding: 1.3rem 2rem;
+                padding: .5rem 2rem;
                 border-radius: 4px;
                 // font-size: .9rem;
                 color:#fff !important;
                 margin-bottom: 2rem;
                 p{
                     color:#fff !important;
-                    padding-top: .4rem;
+                    padding-top: 0rem;
                     opacity: .9;
                     font-size: .7rem;
                     line-height: 1.4rem;
@@ -179,13 +233,13 @@ export default {
                 }
             }
             .one{
-                    background: #ff808b;
+                    background: #00C292;
                 }
                 .two{
                     background: #757afc;
                 }
                 .three{
-                    background: #0facf3;
+                    background: #EF5350;
                 }
                 .four{
                     background: #251F68;
@@ -276,12 +330,15 @@ export default {
         position: relative;
     }
     .dashboard__left{
-        background: $primary-color !important;
+        background: #252525 !important;
         display: none;
     }
 .dashboard__right{
     width: 100vw !important;
     padding: 3rem 1.2rem !important;
+     .right__wrapper{
+              padding: 1rem .5rem !important;
+        }
 }
 .summary__wrapper{
     grid-gap: 5px !important;

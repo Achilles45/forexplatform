@@ -19,7 +19,7 @@
                   <div class="col-md-6 text">
                       <h2>Join over 100 students learning winning strategies in the forex market</h2>
                       <p>Learning to trade the biggest financial market in the world can prove to be most valuable skill to have in 2020. Our highly skilled educational team has designed a result driven approach to deliver world class education in forex trade.<br><br>We train you so that you can start trading and getting results as soon as possible with clear illustrations.</p>
-                        <a href="tel:08103515205" class="call__btn">Get Started</a>
+                        <router-link to="/signup" class="call__btn">Enroll with $500 only</router-link>
                   </div>
               </div>
           </div>

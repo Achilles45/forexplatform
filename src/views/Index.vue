@@ -6,6 +6,7 @@
     <About />
     <Pricing />
     <Education />
+    <Signals />
     <Footer />
   </div>
 </template>
@@ -18,6 +19,7 @@ import Banner from '@/components/Banner.vue'
 import About from '@/components/About.vue'
 import Pricing from '@/components/Pricing.vue'
 import Education from '@/components/Education.vue'
+import Signals from '@/components/Signals.vue'
 import Footer from '@/components/Footer.vue'
 export default {
   name: 'Index',
@@ -28,6 +30,7 @@ export default {
     About,
     Pricing,
     Education,
+    Signals,
     Footer
   }
 }

@@ -11,20 +11,30 @@
             <br /><br />
             <ul>
                <li><router-link to="/dashboard/overview"><i class="fa fa-cubes icons"></i>&nbsp;&nbsp; Overview</router-link></li><hr> 
-                <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr> 
-                    <li><router-link to="/dashboard/payment"><i class="fa fa-credit-card icons"></i>&nbsp;&nbsp; Deposit</router-link></li><hr> 
-                <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
+                <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr>
+                 <li><router-link to="/dashboard/payment"><i class="fa fa-credit-card icons"></i>&nbsp;&nbsp; Deposit</router-link></li><hr> 
+                 <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
                <li @click="logOut()" class="logout"><i class="fa fa-database icons"></i>&nbsp;&nbsp; Logout</li><hr>
             </ul>
             <br><br><br><br>
            </div>
-           <div class="dashboard__right ">
-              <div class="heading d-flex justify-content-between">
+           <div class="dashboard__right">
+               <div class="dashoard__heading d-none d-md-block">
+                 <div class="heading__content d-flex justify-content-between">
+                      <div class="toggler">
+                      <i class="fa fa-bars"></i>
+                  </div>
+                  <div class="email__holder">
+                      <h6>{{email}}</h6>
+                  </div>
+                 </div>
+               </div>
+              <div class="right__wrapper">
+                  <div class="heading d-flex justify-content-between">
                   <div class="content">
-                      <h4>You are logged as </h4>
-                      <h2>{{ first_name }} {{ last_name }}</h2>
-                      <!-- <small>{{ firstCode }}</small> -->
-                  <!-- <small>{{ accountNumber }}</small> -->
+                   <!-- <h5>Welcome Back!</h5> -->
+                      <h4>{{ first_name }} {{ last_name }}</h4>
+                    <h5>Make Payment</h5>
                   </div>
                     <div @click.prevent="show()" class="navbar__toggler">
                       <i class="fa fa-bars"></i>
@@ -32,52 +42,54 @@
                   <hr>
               </div>
               <div id="dashboard">
-             <small>This is your profile information on our platform</small>
+             <small>You can make your deposit with any of the following methods immediately.</small>
              <hr>
-                  <form>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="fname">First Name *</label>
-                          <input type="text" class="form-control" disabled v-bind:value="first_name">
-                        </div>
-                      </div>
-                       <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="lname">Last Name *</label>
-                          <input type="text" class="form-control" disabled v-bind:value="last_name">
-                        </div>
-                      </div>
-                    </div>
-                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="email">Email Address *</label>
-                          <input type="text" class="form-control" disabled v-bind:value="email">
-                        </div>
-                      </div>
-                       <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="phone">Phone Number *</label>
-                          <input type="text" class="form-control" disabled v-bind:value="phone">
-                        </div>
-                      </div>
-                    </div>
-                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="address">Office or Home Address *</label>
-                          <input type="text" class="form-control" disabled v-bind:value="address">
-                        </div>
-                      </div>
-                       <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="plan">Investment Plan *</label>
-                          <input type="text" class="form-control" disabled v-bind:value="plan">
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+                  <div class="summary__wrapper">
+                  <div class="summary__card one pt-4">
+                     <!-- <i class="fa fa-home"></i> -->
+                     <div class="content pl-4">
+                         <!-- <h6>Bank Accounts</h6> -->
+                         <h6>Bank Name: First Bank of Nigeria, PLC</h6>
+                         <hr>
+                         <h6>Account Number:  3076977973</h6>
+                         <h6>Account Name:  Usuoyibo Achilles Ewomamena</h6>
+                     </div>
+                  </div>
+                   <div class="summary__card two pt-4">
+                     <!-- <i class="fa fa-home"></i> -->
+                     <div class="content pl-4">
+                         <!-- <h6>Bank Accounts</h6> -->
+                         <h6>Bank Name: Ecobank Nigeria, PLC</h6>
+                         <hr>
+                         <h6>Account Number:  2923060223</h6>
+                         <h6>Account Name:  Esemuzor Uche</h6>
+                     </div>
+                  </div>
+                    <!-- <div class="summary__card three pt-4">
+                     <i class="fa fa-cubes"></i>
+                     <div class="content pl-4">
+                         <h6>Invetment Lifecycle</h6>
+                         <p>Your capital and returns would be paid back after a minimum of 4 days after your payment has been confirmed.</p>
+                     </div>
+                  </div> -->
+                  <div class="summary__card four pt-4">
+                     <!-- <i class="fa fa-home"></i> -->
+                     <div class="content pl-2">
+                         <!-- <h6>Bank Accounts</h6> -->
+                         <h6>Bitcoin Payment</h6>
+                         <hr>
+                         <h6>Wallet Address: 3JFo28nx8hS5Z2Jv6D2hwNBx3nXbouky1Q</h6>
+                         <!-- <h6>Account Name:  Usuoyibo Achilles Ewomamena</h6> -->
+                     </div>
+                  </div>
+              </div>
+              </div>
+              <hr>
+              <div>
+                  <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/tickers/?locale=en#%7B%22symbols%22%3A%5B%7B%22title%22%3A%22EUR%2FUSD%22%2C%22proName%22%3A%22FX_IDC%3AEURUSD%22%7D%2C%7B%22description%22%3A%22GBP%2FUSD%22%2C%22proName%22%3A%22FX%3AGBPUSD%22%7D%2C%7B%22description%22%3A%22USD%2FJPY%22%2C%22proName%22%3A%22FX%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22NZD%2FUSD%22%2C%22proName%22%3A%22FX%3ANZDUSD%22%7D%2C%7B%22description%22%3A%22AUD%2FUSD%22%2C%22proName%22%3A%22FX%3AAUDUSD%22%7D%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A72%2C%22utm_source%22%3A%22cryptomorefx.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22tickers%22%7D" style="box-sizing: border-box; height: 72px; width: 100%;"></iframe>
+              </div>
+              <div></div>
+              <p>After making paymen, please send a message to to customer care using the live chat or call 08103515205 so your payment can be immediately approved.</p>
               </div>
             <!--End of Dashboard
             =========================-->
@@ -95,15 +107,28 @@ export default {
             email:null,
             first_name:null,
             last_name:null,
-            address:null,
             plan:null,
-            phone:null
+            id:null
+        }
+    },
+    computed:{
+        investmentReturns(){
+            return this.plan * 0.15
         }
     },
      methods:{
           show:function(){
             const navLeft = document.querySelector('#dashboard__left')
             navLeft.classList.toggle('navLeft')
+        },
+        //Remove the left section of the dashbord
+        shiftLeft(){
+            const navLeft = document.querySelector('#dashboard__left')
+            const toggler = document.querySelector('.toggler');
+            toggler.addEventListener('click', ()=>{
+                navLeft.classList.remove()
+            })
+
         },
          //Function for the user to logout
         logOut:function(){
@@ -124,8 +149,7 @@ export default {
                 this.last_name = doc.data().last_name,
                 this.email = doc.data().email,
                 this.plan = doc.data().plan,
-                this.phone = doc.data().phone,
-                this.address = doc.data().address
+                this.id = doc.data().user_id
             })
         })
     }
@@ -139,7 +163,7 @@ export default {
     display: grid;
     grid-template-columns:  260px 1fr;
     // grid-gap: 30px;
-  .dashboard__left{
+    .dashboard__left{
         background: #252525;
         padding: 1rem 2rem;
         color:#fff;
@@ -153,10 +177,11 @@ export default {
             height: auto;
             margin-bottom: 2rem;
         }
+        
         h5{
             opacity: .8;
             font-size: 1.1rem;
-            padding-bottom: .5rem;
+            // padding-bottom: .5rem;
         }
         ul{
             li a, .logout{
@@ -174,15 +199,21 @@ export default {
         }
     }
     .dashboard__right{
-        background: #fafafa;
-        padding: 3rem 2.5rem;
+        background: #F4F6F9;
+        // padding: 3rem 2.5rem;
+        .right__wrapper{
+              padding: 1rem 2rem;
+        }
+        h4{
+           font-weight: 400;
+        }
        small{
-           color:#627081;
+            color:#627081;
            font-size: .8rem;
            font-weight: bold;
            opacity: .8;
        }
-        .dashoard__heading{
+       .dashoard__heading{
            background-color: #FBAE1C;
            padding: 1.2rem 2rem;
            display: flex;
@@ -190,19 +221,19 @@ export default {
        }
         .summary__wrapper{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             grid-gap: 30px;
-            margin-top: 2rem;
+            margin-top: 1rem;
             .summary__card{
                 display: flex;
-                padding: 1.3rem 2rem;
+                padding: 1rem 1rem;
                 border-radius: 4px;
                 // font-size: .9rem;
                 color:#fff !important;
                 margin-bottom: 2rem;
                 p{
                     color:#fff !important;
-                    padding-top: .4rem;
+                    padding-top: 0rem;
                     opacity: .9;
                     font-size: .7rem;
                     line-height: 1.4rem;
@@ -214,18 +245,23 @@ export default {
                 }
             }
             .one{
-                    background: #ff808b;
+                    background: #00C292;
                 }
                 .two{
                     background: #757afc;
                 }
                 .three{
-                    background: #0facf3;
+                    background: #EF5350;
                 }
                 .four{
                     background: #251F68;
+                   
                 }
+                
         }
+         p{
+                        color: red;
+                    }
             //REQUEST FORM
             form{
                  box-shadow: 0px 6px 60px -7px rgba(69,77,89,0.15);
@@ -306,12 +342,15 @@ export default {
         position: relative;
     }
     .dashboard__left{
-        background: $primary-color !important;
+        background: #252525 !important;
         display: none;
     }
 .dashboard__right{
     width: 100vw !important;
     padding: 3rem 1.2rem !important;
+     .right__wrapper{
+              padding: 1rem .5rem !important;
+        }
 }
 .summary__wrapper{
     grid-gap: 5px !important;

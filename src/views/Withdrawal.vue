@@ -3,14 +3,17 @@
         <div class="dashboard__wrapper">
            <div class="dashboard__left" id="dashboard__left">
             <div class="heading text-center pt-3">
-                       <h4>Welcome Back</h4><br>
-                        <small>{{ email}}</small><br><br>
-                          <small>Please refresh the page if no data was loaded as we depend on strong internet connection. Or contact support if you have any issue</small>
+                    <img src="../assets/images/user.png" class="user__img" alt=""><br>
+                       <small>{{id}}</small><br><br>
+                       <!-- <h4>{{ first_name }} {{ last_name }}</h4> -->
+                         <small>Please refresh the page if no data was loaded as we depend on strong internet connection. Or contact support if you have any issue</small>
             </div>
-            <br /><br /><br>
+            <br /><br />
             <ul>
                <li><router-link to="/dashboard/overview"><i class="fa fa-cubes icons"></i>&nbsp;&nbsp; Overview</router-link></li><hr> 
-                <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr> <li><router-link to="/"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
+                <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr>
+                    <li><router-link to="/dashboard/payment"><i class="fa fa-credit-card icons"></i>&nbsp;&nbsp; Deposit</router-link></li><hr> 
+                 <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
                <li @click="logOut()" class="logout"><i class="fa fa-database icons"></i>&nbsp;&nbsp; Logout</li><hr>
             </ul>
             <br><br><br><br>
@@ -94,7 +97,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                            <input type="number" placeholder="Amount to withdraw" class="form-control" v-model="amount">
+                                <input type="text" class="form-control" disabled v-bind:value="investmentReturns">
                         </div>
                         </div>
                     </div><div v-if="err" class="err message err animated slideInRight">
@@ -132,6 +135,11 @@ export default {
             amount:null,
             err:null,
             success:null
+        }
+    },
+    computed:{
+        investmentReturns(){
+            return this.plan * 0.15
         }
     },
     methods:{
@@ -190,16 +198,26 @@ export default {
     width: 100vw;
     .dashboard__wrapper{
     display: grid;
-    grid-template-columns:  300px 1fr;
+    grid-template-columns:  260px 1fr;
     // grid-gap: 30px;
-    .dashboard__left{
-        background: #251F68;
-        padding: 3rem 2rem;
+     .dashboard__left{
+        background: #252525;
+        padding: 1rem 2rem;
         color:#fff;
         height: 100% !important;
         small{
             opacity: .6;
             font-size: .75rem;
+        }
+        .user__img{
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        h5{
+            opacity: .8;
+            font-size: 1.1rem;
+            padding-bottom: .5rem;
         }
         ul{
             li a, .logout{

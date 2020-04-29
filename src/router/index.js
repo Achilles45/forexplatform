@@ -10,6 +10,8 @@ import VerifyEmail from '../views/VerifyEmail.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Profile from '../views/Profile.vue'
 import Withdrawal from '../views/Withdrawal.vue'
+import Payment from '../views/Payment.vue'
+import Student from '../views/Student.vue'
 import firebase from 'firebase'
 Vue.use(VueRouter)
 
@@ -77,6 +79,22 @@ Vue.use(VueRouter)
     path: '/dashboard/withdrawal',
     name: 'withdrawal',
     component: Withdrawal,
+    meta:{
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/dashboard/payment',
+    name: 'payment',
+    component: Payment,
+    meta:{
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/student',
+    name: 'student',
+    component: Student,
     meta:{
       requiresAuth: true
     }

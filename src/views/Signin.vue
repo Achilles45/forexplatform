@@ -14,11 +14,11 @@
                       <form @submit.prevent="signin()">
                           <div class="form-group">
                               <!-- <label for="">Email Address</label> -->
-                              <input type="text" id="input" class="form-control" placeholder="Email Address">
+                              <input type="email" id="input" class="form-control" placeholder="Email Address" v-model="email">
                           </div>
                            <div class="form-group">
                               <!-- <label for="">Password</label> -->
-                              <input type="password" id="input" class="form-control" placeholder="Password">
+                              <input type="password" id="input" class="form-control" placeholder="Password" v-model="password">
                           </div>
                           <div class="form__buttom pt-2 pb-3">
                               <p>Yet to have an account? <router-link to="/signup">Create a free account</router-link></p>
@@ -41,6 +41,7 @@
 </template>
 
 <script>
+import firebase from 'firebase';
 export default {
     data(){
         return{
@@ -52,16 +53,28 @@ export default {
     },
     methods:{
         signin(){
-            this.loading = true
-            //Check first if all fields has been filled out
+            this.loading = true;
+            //Check if the user has filled out the form
             if(!this.email || !this.password){
                 this.loading = false
-                this.err = 'Please provide your credentials. Refresh and try again!'
-                const inputBorder = document.querySelectorAll('#input');
-                inputBorder[0].style.borderColor = 'red';
-                inputBorder[1].style.borderColor = 'red';
-           }else{
+                this.err = 'Please provide your credentials and try again!'
+            }else{
                 this.loading = true
+                firebase.auth().signInWithEmailAndPassword(this.email, this.password)
+                .then((cred)=>{
+                    //Check if the user has verified his email address
+                    if(cred.user.emailVerified == false){
+                        this.loading = false
+                        this.err = 'Please kindly verify your email first to continue'
+                    }else{
+                        this.loading = false
+                        // this.$router.push({name: 'dashboard'})
+                        alert('You have successfully loged in')
+                    }
+                }).catch(err =>{
+                    this.loading = false;
+                    this.err = err.message
+                })
             }
         }
     }
@@ -133,6 +146,10 @@ export default {
                 padding: .8rem 2rem;
                 width: 30%;
                 border-radius: 4px;
+            }
+             .loader{
+                // max-width: 250px;
+                height: 100px;
             }
             .form__buttom{
                 p{

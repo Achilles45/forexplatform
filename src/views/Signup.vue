@@ -46,6 +46,17 @@
                               <div class="form-group">
                                   <input type="text" id="input" class="form-control" placeholder="Home or Office Address" v-model="address">
                               </div>
+                               <div class="form-group">
+                                    <small id="passwordHelpBlock" class="form-text text-muted">Select an investment plan that is suitable for you. You can always upgrade it!</small>
+                                  <select v-model="plan" class="form-control" id="input">
+                                      <option value="100" selected>100 USD</option>
+                                      <option value="200" selected>200 USD</option>
+                                      <option value="500" selected>500 USD</option>
+                                      <option value="1000" selected>1,000 USD</option>
+                                      <option value="5000" selected>5,000 USD</option>
+                                      <option value="10,000" selected>10,000 USD</option>
+                                  </select>
+                              </div>
                                <div class="row">
                                   <div class="col-md-6">
                                        <div class="form-group">
@@ -67,6 +78,9 @@
                           <div v-if="loading" class="loading text-center">
                               <img src="../assets/images/loader.gif" class="loader" alt="">
                           </div>
+                           <div v-if="success" class="alert alert-success animated slideInLeft">
+                      {{ success }}
+                  </div>
                            <button type="submit" class="signin__btn">Submit</button>
                       </form>
                   </div>
@@ -77,6 +91,8 @@
 </template>
 
 <script>
+import firebase from 'firebase'
+import db from '@/firebase/init'
 export default {
     data(){
         return{
@@ -85,6 +101,7 @@ export default {
             email:null,
             phone:null,
             address:null,
+            plan:null,
             password:null,
             repeat_password:null,
             err:null,
@@ -97,7 +114,7 @@ export default {
         signup(){
             this.loading = true
             //Check first if all fields has been filled out
-            if(!this.first_name || !this.last_name || !this.email || !this.phone || !this.address || !this.password || !this.repeat_password){
+            if(!this.first_name || !this.last_name || !this.email || !this.phone || !this.address || !this.plan || !this.password || !this.repeat_password){
                 this.loading = false
                 this.err = 'All fields are important. Please refresh and try again!'
                 const inputBorder = document.querySelectorAll('#input');
@@ -108,11 +125,34 @@ export default {
                 inputBorder[4].style.borderColor = 'red';
                 inputBorder[5].style.borderColor = 'red';
                 inputBorder[6].style.borderColor = 'red';
+                inputBorder[7].style.borderColor = 'red';
             } else if(this.password != this.repeat_password){
                 this.err = 'Your paswords did not match. Refresh and try again!'
                 this.loading = false
             }else{
                 this.loading = true
+                //This is where we are going to create a new user
+                firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+               .then(cred=>{
+                   const user = firebase.auth().currentUser
+                   user.sendEmailVerification().then(()=>{
+                       //Now let's create a new record for the user on the users collection
+                       db.collection('users').add({
+                        first_name:this.first_name,
+                        last_name:this.last_name,
+                        phone:this.phone,
+                        email:this.email,
+                        plan:this.plan,
+                        address:this.address,
+                        user_id:cred.user.uid
+                })
+                // this.$router.push({name: 'dashboard'})
+                this.loading = false;
+                this.success = 'Congratulations. Please kindly verify your email to login'
+                   }).catch(err=>{
+                       this.err = err.message
+                   })
+               })
             }
         }
     }

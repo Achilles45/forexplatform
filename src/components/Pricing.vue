@@ -11,7 +11,7 @@
              <div class="plans__card card text-center">
                  <h4>$100.00 Plan</h4>
                  <hr>
-                 <p>15% Return On Investment</p>
+                 <p>20% Monthly Return On Investment</p>
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
@@ -20,7 +20,7 @@
               <div class="plans__card card text-center">
                  <h4>$200.00 Plan</h4>
                  <hr>
-                 <p>15% Return On Investment</p>
+                <p>20% Monthly Return On Investment</p>
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
@@ -29,7 +29,7 @@
               <div class="plans__card card text-center">
                  <h4>$500.00 Plan</h4>
                  <hr>
-                 <p>15% Return On Investment</p>
+                <p>20% Monthly Return On Investment</p>
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
@@ -38,7 +38,7 @@
               <div class="plans__card card text-center">
                  <h4>$1,000.00 Plan</h4>
                  <hr>
-                 <p>15% Return On Investment</p>
+                   <p>20% Monthly Return On Investment</p>
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
@@ -47,7 +47,7 @@
               <div class="plans__card card text-center">
                  <h4>$5,000.00 Plan</h4>
                  <hr>
-                 <p>15% Return On Investment</p>
+                   <p>20% Monthly Return On Investment</p>
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>
@@ -56,7 +56,7 @@
               <div class="plans__card card text-center">
                  <h4>$10,000.00 Plan</h4>
                  <hr>
-                 <p>15% Return On Investment</p>
+                   <p>20% Monthly Return On Investment</p>
                  <p>24/7 Customer Support</p>
                  <p>Bank Payment Supported</p>
                  <br>

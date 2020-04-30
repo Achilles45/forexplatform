@@ -2,12 +2,12 @@
   <div class="signals">
       <div class="container">
           <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 pb-5">
                <h2>Get Access to Our Trading Signals</h2>
                   <p>You can get access to our high probability trading setup everyday excluding weekends(of course, there is usually no trade at weekends) and still be very profitable for only a monthly subsciption of $200.</p>
-                  <a href="tel:08103515205" class="signals__btn">Get Started</a>
+                  <router-link to="/signal-details" class="signals__btn">Begin for $200 only</router-link>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 pt-2">
                   <img src="../assets/images/signals.svg" class="img-fluid" alt="">
               </div>
           </div>
@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/_colors';
 .signals{
-    padding: 5rem 0;
+    padding: 3rem 0;
     h2{
         font-weight: bold;
         color: $primary-color;

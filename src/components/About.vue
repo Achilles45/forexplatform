@@ -14,7 +14,7 @@
                         <div class="content">
                            <img src="../assets/images/chart.svg" class="img-fluid icons" alt="">
                            <h5>Forex Trading</h5>
-                           <p>Our strategy allows us to trade and pay our investors 15% weekly. Terms and conditions apply.</p>
+                           <p>Our strategy allows us to trade and pay our investors 20% monthly. Terms and conditions apply.</p>
                           </div>
                     </div>
                     <div class="card__content">

@@ -12,6 +12,8 @@ import Profile from '../views/Profile.vue'
 import Withdrawal from '../views/Withdrawal.vue'
 import Payment from '../views/Payment.vue'
 import Student from '../views/Student.vue'
+import SignalDetails from '../views/SignalDetails.vue'
+import PaymentDetails from '../views/PaymentDetails.vue'
 import firebase from 'firebase'
 Vue.use(VueRouter)
 
@@ -43,6 +45,16 @@ Vue.use(VueRouter)
     path: '/signup',
     name: 'Signup',
     component: Signup
+  },
+  {
+    path: '/signal-details',
+    name: 'SignalDetails',
+    component: SignalDetails
+  },
+  {
+    path: '/payment-details',
+    name: 'PaymentDetails',
+    component: PaymentDetails
   },
   {
     path: '/academy',

@@ -7,7 +7,7 @@
           <img class="carousel-img" src="../assets/images/banner2.jpg" alt="First slide" />
           <div class="carousel-caption">
             <h2 class="animated bounceIn">Making forex trade investment profitable to everyone</h2>
-            <p>Our team of proficient and experienced traders crowdfund resources from investors to trade the forex market and pay our investors 15% weekly. No hidden charges, no story.</p>
+            <p>Our team of proficient and experienced traders crowdfund resources from investors to trade the forex market and pay our investors 20% monthly. No hidden charges, no story.</p>
             <router-link to="/products" class="carousel-btn animated zoomIn animate3d">Get Started<i class="fa fa-long-arrow-alt-right"></i></router-link>
           </div>
         </div>

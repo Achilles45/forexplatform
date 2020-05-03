@@ -37,7 +37,7 @@
           </div>
           <hr>
           <div class="footer__bottom text-center">
-              <small>We are a small group of profitable trders that crowdfund resources from our invetors to trade the financial markets and provide returns on a weekly basis. Please take time to read our terms and condition page before you invest your money so you have a working idea of how it works. For any questions or enquiry, kindly use the livechat widget below as a customer care agent is always handy to repond to you. Also, no payment should be made outside of the accounts provided as you would be doing so at your own risk. Happy investing.</small>
+              <small>We are a group of profitable traders that crowdfund resources from our investors to trade the financial markets and provide 15% returns on investment on a monthly basis. Please take time to read our terms and condition page before you invest your money so you have a working idea of how it works. For any questions or enquiry, kindly use the livechat widget below as a customer care agent is always handy to repond to you. Also, no payment should be made outside of the accounts provided as you would be doing so at your own risk. Happy investing.</small>
           </div>
       </div>
   </footer>

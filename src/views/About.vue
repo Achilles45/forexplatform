@@ -16,7 +16,7 @@
           <div class="col-md-1"></div>
           <div class="col-md-10 heading text-center">
             <h1>We provide you with forex trading opportunities</h1>
-            <p>The company provide you with a variety of options to help you participate in the trade of the biggest financial market in the world. You can choose to invest directly into the market through us and earn 15% returns weekly (Terms and condition applies) or subscibe to our trading signals where we get to send you profitable trading setups. If you choose to learn how to trade yourself, we've got an amazing forex training academy where we teach you market proven strategies to help you profitable within a short time.</p>
+            <p>The company provide you with a variety of options to help you participate in the trade of the biggest financial market in the world. You can choose to invest directly into the market through us and earn 15% returns monthly (Terms and condition applies) or subscibe to our trading signals where we get to send you profitable trading setups. If you choose to learn how to trade yourself, we've got an amazing forex training academy where we teach you market proven strategies to help you become profitable within a short time.</p>
           </div>
           <div class="col-md-1"></div>
         </div>

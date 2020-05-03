@@ -28,7 +28,7 @@
                       </div>
                       <div class="text">
                           <h4>Maturity & Payout</h4>
-                          <p>Our systems is able to track every investor and upon investment maturity, your earn 15% of your investment every week and or withdraw your capital at the end of the month. No hidden charges, no story. Terms and condition apply.</p>
+                          <p>Our systems is able to track every investor and upon investment maturity, your earn 15% of your investment every month. You can also withdraw your capital at the end of the month if you wish. No hidden charges, no story. Terms and condition apply.</p>
                       </div>
                   </div>
               </div>

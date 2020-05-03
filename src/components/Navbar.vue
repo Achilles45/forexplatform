@@ -10,7 +10,7 @@
                       <li><router-link to="/" class="links">Home</router-link></li>
                       <li><router-link to="/about">About Us</router-link></li>
                       <li><router-link to="/contact" class="links">Contact Us</router-link></li>
-                      <li><a href="#pricing" class="links">Investment Plans</a></li>
+                      <!-- <li><a href="#pricing" class="links">Investment Plans</a></li> -->
                       <li><router-link to="/academy" class="links">Academy</router-link></li>
                       <li><router-link to="/signup" class="links">Sign Up</router-link></li>
                       <li><router-link to="/signin" class="login links">Sing In</router-link></li>

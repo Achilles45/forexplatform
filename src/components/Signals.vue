@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col-md-6 pb-5">
                <h2>Get Access to Our Trading Signals</h2>
-                  <p>You can get access to our high probability trading setup everyday excluding weekends(of course, there is usually no trade at weekends) and still be very profitable for only a monthly subsciption of $100.</p>
+                  <p>You can get access to our high probability trading setup everyday excluding weekends(of course, there is usually no trade at weekends) and still be very profitable for only a monthly subsciption of $50.</p>
                   <router-link to="/signal-details" class="signals__btn">Begin for $50 only</router-link>
               </div>
               <div class="col-md-6 pt-2">

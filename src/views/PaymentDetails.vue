@@ -14,14 +14,14 @@
                         <hr>
                           <p>Account Name: Usuoyibo Achilles Ewomamena</p>
                           <p>Account Number: 3076977973</p>
-                          <p>Amount: $200.00 only</p>
+                          <p>Amount: $50.00 only</p>
                       </div>
                       <div class="col-md-6 wrapper">
                         <h6>Bank Name: Ecobank of Nigeria</h6>
                         <hr>
                           <p>Account Name: Esemuzor Uche</p>
                           <p>Account Number: 2923060223</p>
-                          <p>Amount: $200.00 only</p>
+                          <p>Amount: $50.00 only</p>
                       </div>
                   </div>
               </div>
